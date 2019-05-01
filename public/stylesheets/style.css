@@ -1,0 +1,83 @@
+@import "https://fonts.googleapis.com/css?family=Dosis:400,800";
+
+body {
+  font-family: Dosis, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #d9dce2;
+}
+
+header h1{
+  font-size: 80px;
+  color: #5c5f63;
+}
+header h1 span{
+  color: #232426;
+}
+section{
+  width: 70%;
+  margin: 10px 0;
+  background-color: #e5e7ea;
+
+}
+#taskinput input{
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #232426;
+  outline: none;
+  box-sizing: border-box;
+  background-color: #e5e7ea;
+  font-size: 20px;
+}
+
+#tasklist{
+  list-style: none;
+  text-align: left;
+  font-size: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+#tasklist li i{
+  margin: 0 20px;
+}
+
+.removebtn{
+  float: right;
+  color: red;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  -moz-transition: opacity 0.3s;
+  -ms-transition: opacity 0.3s;
+  -o-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+li .removebtn{
+    /*visibility: hidden;*/
+}
+
+#tasklist li{
+  padding: 10px;
+  -webkit-transition: background-color 0.3s;
+  -moz-transition: background-color 0.3s;
+  -ms-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+#tasklist li:hover{
+  background-color: #d9dce2;
+}
+
+#tasklist li:hover .removebtn{
+  opacity: 1;
+}
+
+.completed{
+  color: #5c5f63;
+  text-decoration: line-through;
+}
